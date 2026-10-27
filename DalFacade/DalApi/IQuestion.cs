@@ -1,8 +1,8 @@
 ﻿using DO;
-using DO;
 
 namespace DalApi;
 
-public interface IQuestion : ICrud <Question> 
+/// <summary>פעולות CRUD על ישות השאלה.</summary>
+public interface IQuestion : ICrud<Question>
 {
 }

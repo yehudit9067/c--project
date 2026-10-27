@@ -2,6 +2,7 @@
 
 namespace DalApi;
 
-public interface IAnswer : ICrud <Answer> 
+/// <summary>פעולות CRUD על ישות התשובה.</summary>
+public interface IAnswer : ICrud<Answer>
 {
 }

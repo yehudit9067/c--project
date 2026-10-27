@@ -1,19 +1,22 @@
 ﻿namespace DO;
 
+/// <summary>
+/// ישות שאלה במאגר השאלות.
+/// </summary>
 public record Question
 {
-    int question_id;
-    enum Topic;
-    string content;
-    int correct_answer_id;
+    /// <summary>מספר מזהה ייחודי של השאלה.</summary>
+    public int Id { get; init; }
 
-    public Question(int question_id, Enum Topic, string content, int correct_answer_id)
-    {   this.question_id = question_id;
-        Topic = Topic;
-        this.content = content;
-        this.correct_answer_id = correct_answer_id;
-    }
+    /// <summary>נושא השאלה.</summary>
+    public Topic Topic { get; init; }
 
+    /// <summary>תוכן השאלה.</summary>
+    public string Content { get; init; } = "";
+
+    /// <summary>מזהה התשובה הנכונה.</summary>
+    public int CorrectAnswerId { get; init; }
+
+    /// <summary>בנאי ריק — נדרש לצורכי שכבת הנתונים.</summary>
     public Question() { }
-
 }

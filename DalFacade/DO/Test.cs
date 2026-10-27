@@ -1,26 +1,22 @@
 ﻿namespace DO;
 
+
+/// ישות מבחן (בחינה).
+
 public record Test
 {
-    int test_id;
-    enum Topic;
-    DateTime test_date;
-    int num_of_questions;
+    /// מספר מזהה ייחודי של המבחן.
+    public int Id { get; init; }
 
-    
-    public Test(int test_id, Enum Topic, DateTime test_date, int num_of_questions)
-    { 
-        this.test_id = test_id;
-        Topic = Topic;
-        this.test_date = test_date;
-        this.num_of_questions = num_of_questions;
-    }
+    /// נושא המבחן.
+    public Topic Topic { get; init; }
 
-    public Test()
-    { }
+    /// תאריך הבחינה.
+    public DateTime Date { get; init; }
 
+    /// מספר השאלות במבחן.
+    public int NumOfQuestions { get; init; }
 
-
-
-
+    /// בנאי ריק — נדרש לצורכי שכבת הנתונים.
+    public Test() { }
 }

@@ -2,6 +2,7 @@
 
 namespace DalApi;
 
-public interface IStudentQuestion : ICrud <IStudentQuestion>
+/// <summary>פעולות CRUD על ישות השאלה לנבחן.</summary>
+public interface IStudentQuestion : ICrud<StudentQuestion>
 {
 }

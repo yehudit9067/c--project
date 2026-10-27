@@ -1,21 +1,22 @@
 ﻿namespace DO;
 
+
+/// ישות הקושרת בין תלמיד, מבחן, שאלה והתשובה שנבחרה בה.
+
 public record StudentQuestion
 {
-    int student_id;
-    int exam_id;
-    int question_id;  
-    int answer_id;   //The selected answer
+    ///מזהה התלמיד.
+    public int StudentId { get; init; }
 
+    /// מזהה המבחן.
+    public int TestId { get; init; }
 
-public StudentQuestion(int student_id, int exam_Id, int question_id, int answer_id)
-    {
-        this.student_id = student_id;
-        this.exam_id = exam_Id;
-        this.question_id = question_id; 
-        this.answer_id = answer_id; 
-    }
+    /// מזהה השאלה.
+    public int QuestionId { get; init; }
 
+    /// מזהה התשובה שנבחרה על ידי התלמיד.
+    public int AnswerId { get; init; }
+
+    /// בנאי ריק — נדרש לצורכי שכבת הנתונים.
     public StudentQuestion() { }
-
 }

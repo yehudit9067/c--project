@@ -1,7 +1,8 @@
-﻿
+﻿using DO;
+
 namespace DalApi;
 
-public interface IStudent : ICrud <Student>
+/// <summary>פעולות CRUD על ישות התלמיד.</summary>
+public interface IStudent : ICrud<Student>
 {
-
 }

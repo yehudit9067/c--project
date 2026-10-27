@@ -1,8 +1,8 @@
 ﻿using DO;
 
-namespace DalApi
+namespace DalApi;
+
+/// <summary>פעולות CRUD על ישות המבחן.</summary>
+public interface ITest : ICrud<Test>
 {
-    public interface ITest : ICrud <Test>
-    {
-    }
 }
