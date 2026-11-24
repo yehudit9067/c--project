@@ -1,22 +1,23 @@
 ﻿namespace DalApi;
 
-/// <summary>
-/// חוזה השירות של שכבת הנתונים — מאפשר גישה לכל אחת מהישויות.
-/// </summary>
+
+// חוזה השירות של שכבת הנתונים — מאפשר גישה לכל אחת מהישויות.
+
 public interface IDal
 {
-    /// <summary>גישה לפעולות על ישות התלמיד.</summary>
+   //גישה לפעולות על ישות התלמיד.
     IStudent Student { get; }
 
-    /// <summary>גישה לפעולות על ישות התשובה.</summary>
+    // גישה לפעולות על ישות התשובה.
     IAnswer Answer { get; }
 
-    /// <summary>גישה לפעולות על ישות השאלה.</summary>
+    // גישה לפעולות על ישות השאלה.
     IQuestion Question { get; }
 
-    /// <summary>גישה לפעולות על ישות השאלה לנבחן.</summary>
+    // גישה לפעולות על ישות השאלה לנבחן.
     IStudentQuestion StudentQuestion { get; }
 
-    /// <summary>גישה לפעולות על ישות המבחן.</summary>
+    // גישה לפעולות על ישות המבחן.
     ITest Test { get; }
 }
+

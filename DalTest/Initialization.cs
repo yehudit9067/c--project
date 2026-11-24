@@ -3,14 +3,14 @@ using DO;
 
 namespace DalTest;
 
-/// <summary>
+
 /// אתחול ראשוני של שכבת הנתונים — מילוי כל רשימות הישויות בנתוני דוגמה.
-/// </summary>
+
 public static class Initialization
 {
     private static IDal? s_dal;
 
-    /// <summary>יוצר נתוני דוגמה לכל הישויות. יש לקרוא לפני כל שימוש ב-DAL.</summary>
+    /// יוצר נתוני דוגמה לכל הישויות. יש לקרוא לפני כל שימוש ב-DAL.
     public static void Initialize()
     {
         s_dal = new DalList.DalList();

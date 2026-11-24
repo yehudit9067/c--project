@@ -1,23 +1,22 @@
 ﻿namespace DalApi;
 
-/// <summary>
+
 /// ממשק גנרי אחיד לפעולות CRUD על ישות מנתונים.
-/// </summary>
 /// <typeparam name="T">סוג הישות (DO).</typeparam>
 public interface ICrud<T>
 {
-    /// <summary>יוצר אובייקט ישות חדש ב-DAL ומחזיר את המזהה שהוקצה לו.</summary>
+    /// יוצר אובייקט ישות חדש ב-DAL ומחזיר את המזהה שהוקצה לו.
     int Create(T item);
 
-    /// <summary>מחזיר את אובייקט הישות לפי מזהה, או null אם לא נמצא.</summary>
+    /// מחזיר את אובייקט הישות לפי מזהה, או null אם לא נמצא.
     T? Read(int id);
 
-    /// <summary>מחזיר את כל אובייקטי הישות.</summary>
+    /// מחזיר את כל אובייקטי הישות.
     List<T> ReadAll();
 
-    /// <summary>מעדכן אובייקט ישות קיים.</summary>
+    /// מעדכן אובייקט ישות קיים.
     void Update(T item);
 
-    /// <summary>מוחק אובייקט ישות לפי מזהה.</summary>
+    /// מוחק אובייקט ישות לפי מזהה.
     void Delete(int id);
 }

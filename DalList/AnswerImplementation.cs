@@ -1,10 +1,10 @@
 ﻿using DalApi;
 using DO;
-
+using System.Reflaction;
 namespace DalList;
 
 
-/// מימוש פעולות CRUD על ישות התשובה מול רשימת התשובות ב-DataSource.
+// מימוש פעולות CRUD על ישות התשובה מול רשימת התשובות ב-DataSource.
 
 internal class AnswerImplementation : IAnswer
 {

@@ -8,23 +8,22 @@ namespace DalList;
 /// </summary>
 internal class StudentQuestionImplementation : IStudentQuestion
 {
-    /// <inheritdoc/>
-    /// <remarks>
+   
     /// לישות זו אין מזהה ייחודי משלה, ולכן המזהה המוחזר הוא האינדקס שלה ברשימה.
-    /// </remarks>
+    
     public int Create(StudentQuestion item)
     {
         DataSource.s_studentQuestions.Add(item);
         return DataSource.s_studentQuestions.Count - 1;
     }
 
-    /// <inheritdoc/>
+    
     public StudentQuestion? Read(int id) =>
         id >= 0 && id < DataSource.s_studentQuestions.Count
             ? DataSource.s_studentQuestions[id]
             : null;
 
-    /// <inheritdoc/>
+   
     public List<StudentQuestion> ReadAll() => new(DataSource.s_studentQuestions);
 
     /// <inheritdoc/>

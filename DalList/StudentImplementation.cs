@@ -23,13 +23,13 @@ internal class StudentImplementation : IStudent
         return newItem.Id;
     }
 
-    /// <inheritdoc/>
+   
     public Student? Read(int id) => DataSource.s_students.FirstOrDefault(s => s.Id == id);
 
-    /// <inheritdoc/>
+   
     public List<Student> ReadAll() => new(DataSource.s_students);
 
-    /// <inheritdoc/>
+   
     public void Update(Student item)
     {
         if (!DataSource.s_students.Any(s => s.Id == item.Id))
@@ -39,7 +39,7 @@ internal class StudentImplementation : IStudent
         DataSource.s_students.Add(item);
     }
 
-    /// <inheritdoc/>
+    
     public void Delete(int id)
     {
         if (!DataSource.s_students.Any(s => s.Id == id))

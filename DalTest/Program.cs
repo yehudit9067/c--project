@@ -20,7 +20,7 @@ do
 {
     Console.WriteLine(@"Select an entity to test:
 1. Student
-2. Question
+2. Question  
 3. Answer
 4. StudentQuestion
 5. Test

@@ -2,30 +2,30 @@
 
 namespace DalList;
 
-/// <summary>
+
 /// מאגר הנתונים בזיכרון — רשימות האובייקטים של כל ישות.
-/// </summary>
+
 internal static class DataSource
 {
-    /// <summary>רשימת התלמידים.</summary>
+    /// רשימת התלמידים.
     internal static readonly List<Student> s_students = new();
 
-    /// <summary>רשימת השאלות.</summary>
+    /// רשימת השאלות.
     internal static readonly List<Question> s_questions = new();
 
-    /// <summary>רשימת התשובות.</summary>
+    /// רשימת התשובות.
     internal static readonly List<Answer> s_answers = new();
 
-    /// <summary>רשימת השאלות לנבחנים.</summary>
+    /// רשימת השאלות לנבחנים.
     internal static readonly List<StudentQuestion> s_studentQuestions = new();
 
-    /// <summary>רשימת המבחנים.</summary>
+    /// רשימת המבחנים.
     internal static readonly List<Test> s_tests = new();
 }
 
-/// <summary>
+
 /// מונה המזהים הרצים לכל ישות.
-/// </summary>
+
 internal static class Config
 {
     /// המזהה ההתחלתי של תלמיד
