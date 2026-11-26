@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "Tools",
+			"path": "../c--project/Tools"
+		}
+	],
+	"settings": {}
+}

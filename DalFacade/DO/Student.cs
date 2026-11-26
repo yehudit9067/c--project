@@ -1,19 +1,22 @@
 ﻿namespace DO;
 
+
+///(ישות תלמיד (נבחן.
+
 public record Student
 {
-    int student_id;
-    string student_name;
-    int exam_id;
-    int score;
+    ///( תעודת הזהות של התלמיד (משמשת גם כמזהה הייחודי.
+    public int Id { get; init; }
 
-    public Student(int student_id, string student_name, int exam_id, int score)
-    {
-        this.student_id = student_id;
-        this.student_name = student_name;
-        this.exam_id = exam_id;
-        this.score = score;
-    }
+    ///שם התלמיד.
+    public string Name { get; init; } = "";
 
+    ///מזהה המבחן שאליו התלמיד ניגש.
+    public int TestId { get; init; }
+
+    /// ציון התלמיד.
+    public int Score { get; init; }
+
+    /// בנאי ריק — נדרש לצורכי שכבת הנתונים.
     public Student() { }
 }
